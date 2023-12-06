@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinyLuxe</title>
+    <link rel="stylesheet" href="stylehtml.css">
+</head>
+<body>
+    <header>
+
+        <div style='display:flex'>
+            <div id="Logo"><a href="index.php"><img src="Vinyluxe_logo.png" width="175px"> </a></div>
+            <div id="Searchbar" ><input type="search" name="uti_recherche" placeholder="Rechercher : " /></div>
+            <div id="Lancer"><input type="submit" value="Lancer !"/></div>
+            <div id="Panier"> <button type="button"> Panier </button></div>
+            <div id="Compte"> <button type="button"> Compte </button></div>
+        </div>
+    </header>
+    
+
+    <!-- Rubriques -->
+    <nav>
+        <a href="#">Accueil </a> |
+        <a href="pageproduit.php" >Produits</a>
+        <!-- <a href="#">Contact</a> --> 
+    </nav>
+
+    <aside id="SlidingDrawer">
+        <!-- Images de vinyles -->
+        <div class="ProduitSliding">
+            <img src="covervinyle/borntodie-lanadelrey.png" alt="Born to Die - Lana Del Rey">
+            <p>Artiste: Lana Del Rey</p>
+            <p>Album: Born to Die</p>
+            <p>Genre: POP</p>
+            <button type="button">Ajouter au panier</button>
+        </div>
+        <div class="ProduitSliding">
+            <img src="covervinyle/nevermind-nirvana.png" alt="Nevermind - Nirvana">
+            <p>Artiste: Nirvana</p>
+            <p>Album: Nevermind</p>
+            <p>Genre: Rock</p>
+            <button type="button">Ajouter au panier</button>
+        </div><div class="ProduitSliding">
+            <img src="covervinyle/darkside-pinkfloyd.png" alt="The Dark Side of the Moon - Pink Floyd">
+            <p>Artiste: Pink Floyd</p>
+            <p>Album: The Dark Side of the Moon</p>
+            <p>Genre: Rock</p>
+            <button type="button">Ajouter au panier</button>
+        </div>
+        <div class="ProduitSliding">
+            <img src="covervinyle/abbey_road-beatles.jpg" alt="Abbey Road - The Beatles">
+            <p>Artiste: The Beatles </p>
+            <p>Album: Abbey Road</p>
+            <p>Genre: POP</p>
+            <button type="button">Ajouter au panier</button>
+        </div><div class="ProduitSliding">
+            <img src="covervinyle/Rumours-Fleetwoodmac.png" alt="Rumours - Fleetwood Mac">
+            <p>Artiste: Fleetwood Mac</p>
+            <p>Album: Rumours</p>
+            <p>Genre: POP</p>
+            <button type="button">Ajouter au panier</button>
+        </div>
+        
+    </aside>
+
+    <section id="MainContent">
+        <!-- Contenu principal ici -->
+        <h2> Les Classiques du Rock</h2>
+        <div class="MainRock">            
+                <div class="product">
+                <!-- Contenu du produit Rock 1 -->
+                <img src="covervinyle/nevermind-nirvana.png" alt="Nevermind - Nirvana">
+                <p>Artiste: Nirvana</p>
+                <p>Album: Nevermind</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit Rock 2 -->
+                <img src="covervinyle/darkside-pinkfloyd.png" alt="The Dark Side of the Moon - Pink Floyd">
+                <p>Artiste: Pink Floyd</p>
+                <p>Album: The Dark Side of the Moon</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit Rock 3 -->
+                <img src="covervinyle/ledzeppeliniv-ledzeppelin.jpg" alt=" Led Zeppelin IV - Led Zeppelin">
+                <p>Artiste: Led Zeppelin</p>
+                <p>Album: Led Zeppelin IV</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <!-- Ajoutez d'autres produits si nécessaire -->
+        </div>
+
+        <h2> Les Classiques du Metal</h2>
+        <div class="MainMetal">            
+                <div class="product">
+                <!-- Contenu du produit Metal 1 -->
+                <img src="covervinyle/masterofpuppets-metallica.jpg" alt="Master of Puppets - Metallica">
+                <p>Artiste: Metallica</p>
+                <p>Album: Master of Puppets</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit Metal 2 -->
+                <img src="covervinyle/thenumberofbeast-ironmaiden.jpg" alt="The Numbers of the Beast - Iron Maiden">
+                <p>Artiste: Iron Maiden</p>
+                <p>Album: The Numbers of the Beast</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit 3 Metal -->
+                <img src="covervinyle/Smurfeler.png" alt=" Smurfeler - Bboy Mael">
+                <p>Artiste: Bboy Mael</p>
+                <p>Album: Smurfeler</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+		</div>
+            
+            <h2> Les Classiques de la POP</h2>
+            <div class="MainPOP">            
+                <div class="product">
+                <!-- Contenu du produit POP 1 -->
+                <img src="covervinyle/Thriller-MichaelJackson.png" alt="Thriller - Michael Jackson">
+                <p>Artiste: Michael Jackson</p>
+                <p>Album: Thriller </p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit POP 2 -->
+                <img src="covervinyle/abbey_road-beatles.jpg" alt="Abbey Road - The Beatles">
+                <p>Artiste: The Beatles</p>
+                <p>Album: Abbey Road</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <!-- Contenu du produit POP 3 -->
+                <img src="covervinyle/Rumours-Fleetwoodmac.png" alt=" Rumours - Fleetwood Mac">
+                <p>Artiste: Fleetwood Mac</p>
+                <p>Album: Rumours</p>
+                <button type="button">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vinyluxe. Tous droits réservés. </p>
+    </footer>
+</body>
+</html>

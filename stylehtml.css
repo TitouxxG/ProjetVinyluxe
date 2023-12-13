@@ -58,7 +58,7 @@ body {
     padding: 10px;
     font-size: 18px;
     border: 2px solid black;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -145,7 +145,11 @@ nav a:hover {
     color: #ffc35b;
     }
 
-
+#NomPage{
+    text-decoration: bold;
+}
+    
+    
 #SlidingDrawer {
     width: 100%;
     border-radius: 20px;
@@ -333,7 +337,6 @@ nav a:hover {
 /*  Page Panier   */
 
 
-/* Optionnel : Ajouter du style supplémentaire pour le texte de la description */
 #DescriptionProduitPrincipal p {
     margin: 0; /* Supprimer la marge par défaut du paragraphe */
 }
@@ -352,10 +355,27 @@ nav a:hover {
     width: 70%; /* Remplir la largeur de son conteneur parent */
 }
 
+#BoutonSupprimerPanier{
+    margin-left: auto;
+}
+#BoutonSupprimerPanier button{
+    background-color: #AE843C;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    text-align: right;
+}
+
 #PrixTotalPanier{
     text-align: right;
     margin-bottom:10px;
+    padding-right: 100px;
 }
+
 
 #PrixTotalPanier button   {
     background-color: #AE843C;
@@ -370,3 +390,45 @@ nav a:hover {
 }
 
 
+/* Page Produit */
+
+#EnsembleInfoProduit {
+    display: flex;
+    flex-direction: row; /* Les éléments sont alignés en colonne */
+    margin: 20px;
+}
+
+#ImageProduitPrincipal img {
+    flex: 1;
+}
+
+#InfoBasiqueProduit {
+    display: flex;
+    flex-direction: column; /* Les infos basiques et le bouton sont alignés en colonne */
+    flex: 1; /* Les infos basiques et le bouton partagent l'espace disponible */
+    margin-left: 20px; /* Marge à gauche des infos basiques */
+}
+
+#BoutonAjoutProduitPanier {
+    margin-top: 20px; /* Marge entre les infos basiques et le bouton */
+}
+
+#BoutonAjoutProduitPanier button {
+    flex:1;
+    padding: 10px; /* Espacement interne */
+    background-color: #AE843C;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+#DescriptionProduit {
+    flex:1;
+    margin-top: 20px; /* Marge entre le bouton et la description */
+}
+
+#DescriptionProduit p {
+    margin: 0; /* Supprime la marge par défaut des paragraphes dans la description */
+}

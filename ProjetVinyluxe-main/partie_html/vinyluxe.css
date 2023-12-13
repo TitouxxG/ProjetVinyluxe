@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;        
+    background-color: #F7F7ED;
+}
+
+button {
+    background-color: #AE843C;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #ffc35b;
+    color: black;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20%;
+}
+
+#Lancer{
+    margin-top:27px;
+    text-align:right;
+}
+
+#Lancer input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Logo{
+    display: flex;
+    align-items: center;
+    margin:20px;
+
+}
+
+#Searchbar {
+    margin-left: auto;
+    margin-top:27px;
+    display: line ;  
+    text-align:right;
+
+}
+
+#Searchbar input[type="search"] {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Panier{
+    margin-right :20px;
+    margin-top:27px;
+    margin-left:20px;
+    text-align:right;
+
+}
+
+#Panier button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Compte{
+    margin-right:20x;
+    margin-top:27px;
+    text-align:right;
+}
+
+#Compte button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #000000;
+    color: #AE843C;
+    padding: 3em;
+    text-align: center;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #000000;
+    color: #AE843C;
+    padding: 1em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #AE843C;
+}
+    
+a:hover {
+    color: #ffc35b;
+}

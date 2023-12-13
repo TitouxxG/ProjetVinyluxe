@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+	background-color: #F7F7ED;
+}
+
+button {
+    background-color: rgb(75, 56, 7);
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #AE843C;
+    color: black;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20%;
+}
+
+#Lancer{
+    margin-top:27px;
+    text-align:right;
+}
+
+#Lancer input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Logo{
+    display: flex;
+    align-items: center;
+    margin:20px;
+
+}
+
+#Searchbar {
+    margin-left: auto;
+    margin-top:27px;
+    display: line ;  
+    text-align:right;
+
+}
+
+#Searchbar input[type="search"] {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Panier{
+    margin-right :20px;
+    margin-top:27px;
+    margin-left:20px;
+    text-align:right;
+
+}
+
+#Panier button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Compte{
+    margin-right:20x;
+    margin-top:27px;
+    text-align:right;
+}
+
+#Compte button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+#SlidingDrawer::-webkit-scrollbar{
+    display: none;
+}
+
+#SlidingDrawer {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto; /* Centre le Sliding Drawer horizontalement */
+    height: 450px;
+    overflow-x: auto;
+    overflow-y: hidden; /* Supprime la barre de défilement vertical, ajustez selon vos préférences */
+    background-color: #2c3e50; /* Couleur de fond */
+    display: flex;
+    flex-wrap: nowrap; /* Empêche le wrapping des éléments enfants sur plusieurs lignes */
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+.ProduitSliding {
+    margin-right: 20px; /* Espace entre les produits */
+    flex: 0 0 auto; /* Les éléments ne peuvent pas se réduire ou agrandir, mais peuvent déborder */
+    width: 250px; /* Largeur de chaque produit, ajustez selon vos préférences */
+    padding: 15px;
+    background-color: #ecf0f1; /* Couleur de fond des produits */
+    border-radius: 5px; /* Coins arrondis pour un aspect plus doux */
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition au survol */
+}
+
+.ProduitSliding:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.ProduitSliding img {
+    width: 100%; /* Remplit la largeur du conteneur parent */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+    border-radius: 5px 5px 0 0; /* Coins arrondis uniquement en haut */
+}
+
+.ProduitSliding p {
+    margin: 10px 0;
+    color: #333; /* Couleur du texte */
+}
+
+/* Ajoutez d'autres styles au besoin */
+
+
+
+nav {
+    background-color: #1a0f00;
+    color: #AE843C;
+    padding: 3em;
+    text-align: center;
+}
+
+#MainContent {
+    padding: 20px;
+    margin-top: 50px; /* Pour éviter que le contenu principal soit caché sous le header */
+}
+
+footer {
+    background-color: #1a0f00;
+    color: #AE843C;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Couleur pour les liens non visités */
+a{
+    text-decoration: none;
+    color: #AE843C;
+}
+
+/* Couleur pour les liens visités */
+a:visited {
+    color: #AE843C; /* Définissez la même couleur que pour les liens non visités ou choisissez une autre couleur */
+}
+
+a:hover {
+    color: #ffc35b;
+}
+
+.MainRock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustez selon vos préférences */
+}
+
+.product {
+    width: 30%; /* Ajustez la largeur selon vos besoins pour laisser de l'espace entre les produits */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les lignes de produits */
+    
+}
+
+
+/* Style du titre principal */
+#MainContent h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Style de la bordure sous le titre */
+#MainContent h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: #918b8b;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Style de la section MainRock */
+.MainRock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style des produits */
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet d'ombre au survol */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des images de produits */
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Style des informations de produits */
+.product p {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Style du texte de chaque produit */
+.product p:first-child {
+    font-weight: bold;
+}
+
+/* Style du bouton "Ajouter au panier" */
+.product button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(75, 56, 7);
+    color: white;
+    border: none;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover{
+	background-color: #AE843C;
+    color: black; 
+}
+
+/* Style de la section MainRock */
+.MainPOP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+/* Style de la section MainRock */
+.MainMetal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+

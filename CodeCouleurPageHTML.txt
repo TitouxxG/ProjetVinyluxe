@@ -1,0 +1,4 @@
+Doré : #AE843C
+Noir des boutons : Black (classique)
+Noir fond de la page d'acceuil : 1f1f1f
+Background Page : F7F7ED (couleur crème)
